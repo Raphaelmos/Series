@@ -1,3 +1,76 @@
+# Compilator
+
+This project of Programming a language is realized for a course specific and based on elements from practical work made along the semester.
+
+This project implements a small programming language with the following elements:
+# Understanding of how it functions 
+Successful tests :
+
+err-lex
+err-syntax
+Varint.test
+
+Minimal language expectations
+Basic types
+
+    Integer
+    Booleans
+    Character strings
+
+Basic library
+
+    Read and write to standard input and output of basic types
+    Basic Boolean logic operators (AND, OR, NOT)
+    Basic integer arithmetic operators (addition, subtraction, multiplication, division, modulo)
+
+Expressions
+
+    Value
+    Variable
+    Function calls (from basic library or user-defined)
+
+Instructions
+
+    Variable declaration
+    Assign the value of an expression to a variable
+    Return the value of an expression
+    Conditional branching "if expression then block else block".
+    Loop "as long as expression do block".
+
+Other elements
+
+    A block is a sequence of instructions
+    A program is a list of function definitions
+
+# Compilation and testing
+Using a build
+
+dune build main.exe
+
+or
+
+ocamlbuild -use-menhir main.byte
+
+Run tests
+
+./main.exe tests/int.test
+then
+spim -file prog.s
+
+Examples of tests
+
+tests/AddInt.test
+tests/AddVar.test
+tests/DivInt.test
+tests/DivVar.test
+tests/MulInt.test
+tests/MulVar.test
+tests/MulVar2.test
+tests/RemInt.test
+tests/RemVar.test
+tests/RemVar2. test
+
+
 
 
 
@@ -45,7 +118,7 @@ Autres éléments
     Un bloc est une séquence d'instructions
     Un programme est une liste de définitions de fonctions
 
-Compilation et tests
+# Compilation et tests
 Utiliser dune build
 
 dune build main.exe
