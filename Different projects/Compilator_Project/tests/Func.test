@@ -1,0 +1,5 @@
+def myFunction(x, y) {
+  var z;
+  z = x * y;
+  return z;
+}

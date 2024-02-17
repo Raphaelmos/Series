@@ -1,0 +1,6 @@
+var toto = 0;
+
+while (toto != 0) do
+  toto = toto - 1;
+;
+

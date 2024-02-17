@@ -1,0 +1,9 @@
+var toto = 10;
+
+if( toto != 0 ) then
+
+    toto = toto - 1;
+
+else 
+    return toto;
+;
