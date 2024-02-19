@@ -1,6 +1,8 @@
 ## What is this ?
 
-This repository is a sort of compilation of some small interesting codes or codes that can be improved into a project
+This repository is a sort of compilation of some small interesting codes or codes that can be improved into a project.
+
+All these projects are in many different languages they can go to algorithms testing to training in C programming to making a puzzle solver to making a compiler.
 
 # Contributions allowed
 
