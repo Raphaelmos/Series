@@ -5,7 +5,7 @@ class Paint(Frame):
     def __init__(self, parent):
         Frame.__init__(self, parent)
         self.parent = parent
-        self.brush_size = 10
+        self.brush_size = 5
         self.brush_color = "red"
         self.color = "red"
         self.setUI()
@@ -85,6 +85,7 @@ def main():
     global root
     root = Tk()
     root.geometry("800x600+300+300")
+    # A good option to do would be to as will change the size of canvas
     app = Paint(root)
     m = Menu(root)
     root.config(menu=m)
