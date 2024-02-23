@@ -1,3 +1,4 @@
+# Thinking of putting the French in English or maybe two files seperating it or a option to change language
 from tkinter import *
 from tkinter.messagebox import *
 from tkinter import ttk
