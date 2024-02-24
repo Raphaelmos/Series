@@ -2,6 +2,7 @@
 
 This project of Programming a language is realized for a course specific and based on elements from practical work made along the semester.
 
+Small precision : this compilator is with a base of Assembly / OCaml and only function for compiling C programming and not any other languages yet. 
 This project implements a small programming language with the following elements:
 # Understanding of how it functions 
 Successful tests :
