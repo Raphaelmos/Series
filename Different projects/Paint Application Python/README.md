@@ -8,8 +8,9 @@ This project can be upgraded by alot
 
 Points that come in mind for a simple Python :
 
-- Increase the color palette by at least 10 more <br>
+- Increase the color palette by at least 10 more by having the sort of jsColors library but for Python <br>
 - Add the feature to add a image on the canvas <br>
 - Add a fill entire canvas <br>
-- Change size of the canvas
+- Change size of the canvas <br>
+- saving/loading canvas images so work isn't lost when closing the program. Basic file I/O functionality would make the app more polished. <br>
 
