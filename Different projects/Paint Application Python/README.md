@@ -13,5 +13,6 @@ Points that come in mind for a simple Python :
 - Add a fill entire canvas <br>
 - Change size of the canvas <br>
 - Saving/loading canvas images so work isn't lost when closing the program. Basic file I/O functionality would make the app more polished. <br>
-- Undo/redo feature similar to a ctrl Z hotkey 
+- Undo/redo feature similar to a ctrl Z hotkey <br>
+- Better aesthetic too
 
