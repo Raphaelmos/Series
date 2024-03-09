@@ -4,29 +4,44 @@
 
 import re
 
-results = {}
+with open('miserables.txt.txt', encoding='utf-8') as f:
+  text = f.read()
+  
+phrases = re.split(r'[.?]', text)
 
-with open('miserables.txt') as f:
-    texte = f.read()
-    
-phrases = re.split(r'[.?]', texte)
-texte_parse = ''
 for phrase in phrases:
-    texte_parse += '<phrase>' + phrase + '</phrase>'
+  nb_l = len(re.findall(r"l'", text))
+  mots = re.split(r'\s+', phrase)
+  
+  for i, mot in enumerate(mots):
     
-for phrase in re.findall(r'<phrase>(.*?)</phrase>', texte_parse):
+    if mot in ['le', 'la', 'l', 'les', ]:
+      
+      article = mot
+      
+      mot_precedent = mots[i-1]
+      
+      if mot_precedent in ['je', 'tu', 'il', 'elle', 'nous', 'vous', 'ils', 'elles']:
+        type_precedent = "Pronom personnel"  
+        
+      elif mot_precedent in ['chez', 'dans', 'de', 'entre', 'jusque', 'hors', 'par', 'pour',  
+                      'sans', 'vers', 'après', 'avec', 'contre', 'malgré','outre','sous','suivant','durant', 'jusqu’à', 'moyennant', 'nonobstant','pendant','quoique','suivant','touchant' ]:
+        type_precedent = "Article défini"
+        
+      elif mot_precedent.endswith('s') or mot_precedent.endswith('nt'):
+        type_precedent = "Verbe"
+        
+      else:
+        type_precedent = "Autre cas"
+      
+     
 
-    mot_avant = re.search(r'(\w+\s+)([lela]?[^\s]+)', phrase).group(1)
+       
+      print(f"Phrase: <p>{phrase}</p>")
+      print(f"{type_precedent} : {mot_precedent}, Déterminant : {article}")
+   # A modifier pour avoir les déterminants intégré dans des balises aussi 
+print(f"Nombre d'occurrences de 'l': {nb_l}") 
 
-    if mot_avant in ['je', 'tu', 'il', 'elle', 'nous', 'vous', 'ils', 'elles']:
-        type = "Pronom personnel"
-    elif mot_avant in ['chez', 'dans', 'de', 'entre', 'jusque', 'hors', 'par', 'pour',  
-                      'sans', 'vers']: 
-        type = "Article défini"
-    elif mot_avant.endswith('s') or mot_avant.endswith('nt'):
-        type = "Verbe"
-    else:
-        type = "Autre cas"
         
     article = re.search(r'(\w+\s+)([lela]?[^\s]+)', phrase).group(2)    
     results[article] = type
