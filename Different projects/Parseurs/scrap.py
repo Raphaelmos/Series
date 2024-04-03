@@ -1,10 +1,11 @@
 # Scraper / Crawler 
-
+# The full code won't be posted and it strictly is for a university project and for this sole purpose only.
 import scrapy 
 import json
 import csv
 
 # Take infos to know if a game is worth it with multiple infos : Price / Player base / editor / ratings / studio ( Metacritic / Steam / Howlongtobeat.com )
+
 
 
   def parse(self, response):
