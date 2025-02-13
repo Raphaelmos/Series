@@ -6,7 +6,7 @@ This project is a very basic paint application made in Python that have primary 
 # Possible Improvements 
 This project can be upgraded by alot 
 
-Points that come in mind for a simple Python :
+Points that come in mind for a simple Paint Python :
 
 - Increase the color palette by at least 10 more by having the sort of jsColors library but for Python <br>
 - Add the feature to add a image on the canvas <br>
