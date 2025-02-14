@@ -2,6 +2,7 @@
 
 This project is a very basic paint application made in Python that have primary colors with different sizes of brush size and a feature to delete everything
 
+This Project has been moved to a new repository with all the features below done.
 
 # Possible Improvements 
 This project can be upgraded by alot 
